@@ -14,6 +14,10 @@ cloudinary.v2.config({
 
 await dbConnection();
 
+app.get("/",(req, res)=>{
+ res.send("Welcome to the Admin Dashboard!");
+})
+
 app.listen(process.env.PORT, () => {
   console.log(`Server listening at port ${process.env.PORT}`);
 });
