@@ -35,8 +35,8 @@ app.use("/api/v1/message", messageRouter);
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/appointment", appointmentRouter);
 
-app.get("/",(res,req)=>{
-  res("Hello Admin Dashboard");
+app.get("/",(req, res)=>{
+ res.send("Welcome to the Admin Dashboard!");
 })
 
 
