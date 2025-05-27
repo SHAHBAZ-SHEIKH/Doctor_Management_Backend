@@ -15,7 +15,7 @@ dotenv.config()
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL_ONE, process.env.FRONTEND_URL_TWO],
+    origin: [process.env.FRONTEND_URL_ONE || "https://doctor-management-frontend.vercel.app/", process.env.FRONTEND_URL_TWO || "https://doctor-management-admin-62u3.vercel.app/"],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
